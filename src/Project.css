@@ -1,0 +1,147 @@
+.nft-marketplace {
+    color: #9C9BE1; 
+  }
+  
+  .habitual {
+    color: #F6DE83;
+  }
+  
+  .modern-website {
+    color: #A21044; 
+  }
+  
+  .carousel-animation {
+    color: #F03943; 
+  }
+  .compoundx{
+    color: #4BAA5C;
+  }
+  section {
+    text-align: center; 
+    padding-top: 120px; /* Space above the section */
+}
+
+.projects-grid {
+  display: grid; /* Apply grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+  gap: 40px; /* Space between project cards */
+  padding: 50px; /* Padding around the grid */
+}
+  
+  .project-card {
+    background: none; /* No background for the project card */
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    transition: transform 0.3s ease; /* Smooth transition for the card */
+  }
+  .project-card {
+    background: none; /* Background for the project card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6px; /* Padding inside the card */
+    transition: transform 0.3s ease; /* Smooth transition for the card */
+
+}
+  
+  .project-card a {
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .project-image  {
+    width: 100%;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 16px;
+  }
+  
+  .project-card h2 {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect on the project card image */
+  .project-card:hover .project-image {
+    transform: scale(1.05); /* Scale the image up */
+  }
+  
+  /* Hover effect on the project card title */
+  .project-card:hover h2 {
+    font-size: 1.7rem; /* Increase text size */
+    transform: scale(1.1); /* Scale the text */
+  }
+  
+  section h1 {
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add space below the heading */
+    background: linear-gradient(90deg, #DBA6F0 0%, #A981FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: fadeInUp 1s ease-out; /* Apply the fadeInUp animation */
+  }
+
+  @media only screen and (max-width: 480px) {
+    
+  
+    /* Projects grid in 1 column on mobile */
+    .projects-grid {
+      grid-template-columns: 1fr; /* 1 column layout for mobile */
+    }
+  
+    /* Adjust header */
+    header {
+      height: auto; /* Allow header to adjust its height based on content */
+      padding: 20px; /* Add padding to the header */
+      text-align: center; /* Center text horizontally */
+    }
+  
+    .header-avatar-container {
+      flex-direction: column; /* Stack items vertically */
+      margin-top: 0; /* Remove top margin */
+      gap: 20px; /* Adjust gap between items */
+      padding: 10px; /* Adjust padding for mobile */
+    }
+  
+    .header-avatar-container img {
+      width: 100px; /* Adjust avatar size */
+      height: 100px; /* Maintain aspect ratio */
+      border-radius: 50%; /* Ensure avatar is circular */
+    }
+  
+    header h1 {
+      font-size: 2rem; /* Adjust font size for mobile */
+    }
+  
+    header p {
+      font-size: 1rem; /* Adjust font size for mobile */
+    }
+  
+    .header-image {
+      max-width: 90%;
+      padding-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .project-image {
+      width: 100%;
+      height: auto;
+    }
+  }

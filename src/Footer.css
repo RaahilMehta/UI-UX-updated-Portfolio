@@ -1,0 +1,126 @@
+footer {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Horizontal gap between the links */
+  }
+  
+  footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+  }
+  
+  a {
+    color: white; /* White color for links */
+  }
+
+  footer {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center the links */
+    gap: 40px; /* Horizontal gap between the links */
+    font-size: 2.5rem;
+    padding-top: 20px;
+  }
+  
+  footer a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Adjust font size if needed */
+    background: linear-gradient(90deg, #FFE597 0%, #AAFF82 100%);
+    -webkit-background-clip: text; /* Ensure the gradient is applied to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    background-clip: text; /* For modern browsers */
+    text-fill-color: transparent; /* For older browsers */
+    transition: color 0.3s ease; /* Smooth transition */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    color: #AAFF82; /* Optionally change color on hover for visibility */
+  }
+  footer a:hover {
+    color: #AAFF82;
+    animation: shake 0.5s; /* Apply the shake animation */
+  }
+  
+  /* Define the shaky animation */
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @media only screen and (max-width: 576px) {
+    body, html {
+      font-size: 14px;
+    }
+  
+    /* Remove navbar on small screens */
+    .navbar {
+      display: none;
+    }
+  
+    /* Projects grid in 1 column on mobile */
+    .projects-grid {
+      grid-template-columns: 1fr; /* 1 column layout for mobile */
+    }
+    
+    footer {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Adjust header */
+    header {
+      height: auto; /* Allow header to adjust its height based on content */
+      padding: 20px; /* Add padding to the header */
+      text-align: center; /* Center text horizontally */
+    }
+  
+    .header-avatar-container {
+      flex-direction: column; /* Stack items vertically */
+      margin-top: 0; /* Remove top margin */
+      gap: 20px; /* Adjust gap between items */
+      padding: 10px; /* Adjust padding for mobile */
+    }
+  
+    .header-avatar-container img {
+      width: 100px; /* Adjust avatar size */
+      height: 100px; /* Maintain aspect ratio */
+      border-radius: 50%; /* Ensure avatar is circular */
+    }
+  
+    header h1 {
+      font-size: 2rem; /* Adjust font size for mobile */
+    }
+  
+    header p {
+      font-size: 1rem; /* Adjust font size for mobile */
+    }
+  
+    .header-image {
+      max-width: 90%;
+      padding-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .project-image {
+      width: 100%;
+      height: auto;
+    }
+  }

@@ -1,0 +1,118 @@
+header, footer {
+  background-color: black; /* Black background for header and footer */
+  color: white; /* White font for header and footer */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.scramble-text {
+  font-size: 2.7rem; /* Set the desired font size */
+  color: #DBA6F0; /* Set the desired color */
+  font-weight: 800;
+  display: block; /* Convert to block element */
+}
+
+header {
+  background-color: black; /* Black background for header */
+  color: white; /* White font for header */
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 20vh; /* Full viewport height */
+  text-align: center; /* Center text horizontally */
+  padding: 0px;
+  margin: 10px;
+}
+
+.header-avatar-container {
+  margin-top: 120px;
+  display: flex; /* Make the container a flexbox */
+  align-items: center; /* Vertically center the avatar and header */
+  justify-content: center; /* Center the items horizontally */
+  padding: 20px; /* Add padding for space around the container */
+  gap: px; /* Add a gap between the avatar and header */
+}
+
+.avatar-image {
+  width: 700px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  padding-right: 0px;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+header h1 {
+  margin-top: 0;
+  margin: 0;
+  font-size: 6rem; /* Increased font size */
+  color: purple; /* Change the text color to purple */
+  background: none; /* Remove the gradient background */
+  animation: fadeInUp 1s ease-out;
+}
+
+header p {
+  margin-top: 1px;
+  margin: 10px 0 0;
+  font-size: 1.2rem; /* Increased font size */
+  background: linear-gradient(90deg, #DBA6F0 0%, #A981FE 100%);
+  border-radius: 120px; /* Apply border radius */
+  padding: 10px 20px; /* Add padding to make the gradient more visible */
+  display: inline-block; /* Ensure the p tag only takes up as much space as its content */
+  color: white; /* Set text color for readability */
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@media only screen and (max-width: 480px) {
+  body, html {
+      font-size: 14px;
+  }
+
+  /* Remove navbar on small screens */
+  .navbar {
+      display: none;
+  }
+
+  /* Projects grid in 1 column on mobile */
+  .projects-grid {
+      grid-template-columns: 1fr; /* 1 column layout for mobile */
+  }
+
+  /* Adjust header */
+  header {
+      height: auto; /* Allow header to adjust its height based on content */
+      padding: 20px; /* Add padding to the header */
+      text-align: center; /* Center text horizontally */
+  }
+
+  header h1 {
+      font-size: 2.5rem; /* Increased font size for mobile */
+  }
+
+  header p {
+      font-size: 1.2rem; /* Increased font size for mobile */
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .project-image {
+      width: 100%;
+      height: auto;
+  }
+}

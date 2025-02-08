@@ -1,0 +1,101 @@
+ /* Floating Capsule-Shaped Navbar */
+ .navbar {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.2); /* Translucent white */
+    backdrop-filter: blur(10px); /* Apply blur for more of a translucent glass effect */
+    border-radius: 50px; /* Capsule shape */
+    padding: 10px 40px; /* Padding for capsule effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    z-index: 100; /* Ensure it stays on top */
+  }
+  
+  /* Navbar list styling */
+  .navbar-list {
+    display: flex; /* Align items in a row */
+    gap: 20px; /* Space between items */
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar links */
+  .navbar-list li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white; /* White text */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 25px; /* Rounded buttons */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect */
+  .navbar-list li a:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque background on hover */
+    transform: scale(1.1); /* Scale up on hover */
+  }
+
+  @media only screen and (max-width: 480px) {
+    body, html {
+      font-size: 14px;
+    }
+  
+    /* Remove navbar on small screens */
+    .navbar {
+      display: none;
+    }
+  
+    /* Projects grid in 1 column on mobile */
+    .projects-grid {
+      grid-template-columns: 1fr; /* 1 column layout for mobile */
+    }
+  
+    /* Adjust header */
+    header {
+      height: auto; /* Allow header to adjust its height based on content */
+      padding: 20px; /* Add padding to the header */
+      text-align: center; /* Center text horizontally */
+    }
+  
+    .header-avatar-container {
+      flex-direction: column; /* Stack items vertically */
+      margin-top: 0; /* Remove top margin */
+      gap: 20px; /* Adjust gap between items */
+      padding: 10px; /* Adjust padding for mobile */
+    }
+  
+    .header-avatar-container img {
+      width: 100px; /* Adjust avatar size */
+      height: 100px; /* Maintain aspect ratio */
+      border-radius: 50%; /* Ensure avatar is circular */
+    }
+  
+    header h1 {
+      font-size: 2rem; /* Adjust font size for mobile */
+    }
+  
+    header p {
+      font-size: 1rem; /* Adjust font size for mobile */
+    }
+  
+    .header-image {
+      max-width: 90%;
+      padding-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .project-image {
+      width: 100%;
+      height: auto;
+    }
+  }

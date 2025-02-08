@@ -1,0 +1,102 @@
+.nft-marketplace {
+  color: #9C9BE1; 
+}
+
+.habitual {
+  color: #F6DE83;
+}
+
+.modern-website {
+  color: #A21044; 
+}
+
+.carousel-animation {
+  color: #F03943; 
+}
+
+.compoundx {
+  color: #4BAA5C;
+}
+
+section {
+  text-align: center; 
+  padding-top: 120px; /* Space above the section */
+}
+
+.designs-grid {
+  display: grid; /* Apply grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+  gap: 40px; /* Space between design cards */
+  padding: 50px; /* Padding around the grid */
+}
+
+.design-card {
+  background: white; /* Background for the design card */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px; /* Padding inside the card */
+  transition: transform 0.3s ease; /* Smooth transition for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.design-card a {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.design-image {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.design-card h2 {
+  font-size: 1.5rem; /* Font size for the title */
+  transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect on the design card */
+.design-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+}
+
+/* Hover effect on the design card title */
+.design-card:hover h2 {
+  font-size: 1.7rem; /* Increase text size */
+}
+
+section h1 {
+  font-family: 'Poppins', sans-serif; /* Ensure Poppins font */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Add space below the heading */
+  background: linear-gradient(90deg, #DBA6F0 0%, #A981FE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: fadeInUp 1s ease-out; /* Apply the fadeInUp animation */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 480px) {
+  .designs-grid {
+      grid-template-columns: 1fr; /* 1 column layout for mobile */
+  }
+
+  section h1 {
+      font-size: 2rem; /* Adjust font size for mobile */
+  }
+
+  .design-card h2 {
+      font-size: 1.2rem; /* Adjust title size for mobile */
+  }
+
+  .design-image {
+      width: 100%; /* Make image responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+}

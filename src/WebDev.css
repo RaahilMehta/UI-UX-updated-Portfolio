@@ -1,0 +1,83 @@
+section.webdev-section {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .projects-grid-webdev {
+    display: grid; /* Apply grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    gap: 10px; /* Space between project cards */
+    padding: 10px; /* Padding around the grid */
+  }
+  
+  .project-card-webdev {
+    background: none; /* No background for the project card */
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for the card */
+  }
+  
+  .project-card-webdev a {
+    text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .project-image-webdev {
+    width: 100%;
+    height: 200px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensures image maintains aspect ratio and fills the area */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+  
+  .project-card-webdev h2 {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .project-card-webdev:hover .project-image-webdev {
+    transform: scale(1.05); /* Scale the image up */
+  }
+  
+  .project-card-webdev:hover h2 {
+    font-size: 1.7rem; /* Increase text size */
+    transform: scale(1.1); /* Scale the text */
+  }
+  
+  section.webdev-section h1 {
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add space below the heading */
+    background: linear-gradient(90deg, #DBA6F0 0%, #A981FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: fadeInUp 1s ease-out; /* Apply the fadeInUp animation */
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .projects-grid-webdev {
+      grid-template-columns: 1fr; /* 1 column layout for mobile */
+    }
+  
+    /* Adjust header and other elements for mobile */
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .project-image-webdev {
+      width: 100%;
+      height: 200px; /* Keep the fixed height on mobile as well */
+    }
+  }
+  

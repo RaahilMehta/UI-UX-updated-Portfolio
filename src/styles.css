@@ -1,0 +1,81 @@
+body, html, .app-container {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black !important; /* Force black background */
+    color: white; /* Black background */
+  }
+
+  /* Custom scrollbar for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* Set background of the track (scrollbar container) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #DBA6F0; /* Set the scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 3px solid black; /* Black border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #A981FE; /* Change scrollbar thumb color on hover */
+}
+
+/* Custom scrollbar for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* Set background of the track (scrollbar container) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #DBA6F0; /* Set the scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 3px solid black; /* Black border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #A981FE; /* Change scrollbar thumb color on hover */
+}
+
+/* 
+body {
+  cursor: url('/assets/cursor.png'), auto; 
+} */
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Prevents interaction with other elements */
+  z-index: 9999; /* Keeps it above all elements */
+}
+
+.cursor-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Ensures no interference with other UI elements */
+  z-index: 9999;
+}
+
+  
+
+
+
+
+  
+  
