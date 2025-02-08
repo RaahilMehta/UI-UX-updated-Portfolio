@@ -1,0 +1,54 @@
+@keyframes marqueeScroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
+    }
+    25% {
+      text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff;
+    }
+    50% {
+      text-shadow: 2px -2px 0px #ff00ff, -2px 2px 0px #00ffff;
+    }
+    75% {
+      text-shadow: -2px 2px 0px #ff00ff, 2px -2px 0px #00ffff;
+    }
+    100% {
+      text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff;
+    }
+  }
+  
+  .marquee-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #DBA6F0;
+    color: white;
+    padding: 15px 0;
+    white-space: nowrap;
+  }
+  
+  .marquee-content {
+    display: flex;
+    gap: 7rem;
+    animation: marqueeScroll 18s linear infinite;
+  }
+  
+  .marquee-item {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+    position: relative;
+    animation: glitch 0.5s infinite alternate; /* Glitch effect applied */
+  }
+  
