@@ -18,6 +18,8 @@ const projects = [
       size: { width: '400px', height: '350px' },
       marginBottom: '40px'
   },
+
+  
 ];
 function Projects() {
   return (

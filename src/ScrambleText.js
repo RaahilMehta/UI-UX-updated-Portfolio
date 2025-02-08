@@ -4,7 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const CYCLES_PER_LETTER = 2;
-const SHUFFLE_TIME = 30;
+const SHUFFLE_TIME = 70;
 const CHARS = "!@#$%^&*():{};|,.<>/?";
 
 const ScrambleText = ({ children, className }) => {

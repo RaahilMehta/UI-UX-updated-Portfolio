@@ -15,6 +15,12 @@ const webDevProjects = [
         // link: "https://your-portfolio-link.com",
         image: "/assets/lms.png"
       },
+      {
+        title: "Kanban Board",
+        description: "Sort your Todo lists according to priority",
+        // link: "https://your-portfolio-link.com",
+        image: "/assets/kanban.png"
+      },
   // Add more projects as needed
 ];
 

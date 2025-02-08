@@ -3,12 +3,13 @@ body, html, .app-container {
   padding: 0;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: black !important; /* Force black background */
-    color: white; /* Black background */
-  }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: black !important; /* Force black background */
+    color: white; /* White text for contrast */
+}
   /* Custom scrollbar for Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
   width: 12px; /* Adjust scrollbar width */
